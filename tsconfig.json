@@ -18,6 +18,8 @@
     "strictPropertyInitialization": false,
     "forceConsistentCasingInFileNames": false,
     "noFallthroughCasesInSwitch": false,
-    "strict": true
+    "strict": true,
+    "jsx": "react",
+    "jsxFactory": "elements.createElement"
   }
 }
