@@ -5,9 +5,11 @@ module.exports = {
     extend: {
       width: {
         content: '900px',
+        modal: '600px',
       },
       fontSize: {
-        title: '27px',
+        logo: '29px',
+        title: '19px',
         text: '15px',
       },
     },
