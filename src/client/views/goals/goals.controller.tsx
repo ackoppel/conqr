@@ -1,11 +1,14 @@
 import * as elements from 'typed-html';
+import { Body, Controller, Get, Post, UseInterceptors } from '@nestjs/common';
 
-import { Body, Controller, Get, Post } from '@nestjs/common';
-import ModalCreateGoal from '../../components/modals/ModalCreateGoal';
+import { ModalInterceptor } from '../../../util/interceptors/ModalInterceptor';
+import { ModalType } from '../../enums/modalType.enum';
+import ModalCreateGoal from './components/ModalCreateGoal';
 
 @Controller('/goals')
 export class GoalsController {
   @Get('/create')
+  @UseInterceptors(ModalInterceptor(ModalType.CreateGoal))
   async getModalCreateGoal() {
     return <ModalCreateGoal />;
   }

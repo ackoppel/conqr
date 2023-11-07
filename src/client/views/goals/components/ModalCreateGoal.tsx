@@ -1,7 +1,7 @@
 import * as elements from 'typed-html';
 
-import Modal from './Modal';
-import Button from '../Button';
+import Modal from '../../../components/Modal';
+import Button from '../../../components/Button';
 
 interface IInputProps {
   id: string;
